@@ -1,0 +1,47 @@
+#!/bin/bash
+# Author: B.Segret, v2.1, 27/10/2014
+#                   v2.0, 22/09/2014
+# Downloads one list of files from the Internet
+# SYNOPSIS
+#      ./wgetbot <wget_todo(local)> <wget_log(local)>
+# DESCRIPTION
+#      -> filelist and destination are given in <wget_todo> (same dir like wgetbot),
+#         one line per wanted execution (FIFO preferred)
+#         ex.: /destination ../filelist (files must exist, **NO SPACE IN NAMES**)
+#      -> wgetbot is executed for <wget_todo>'s 1st line only, then the line is removed
+#      -> <wget_log> (same dir like wgetbot) keeps the last N execution of wgetbot (N=20)
+
+run=`dirname $0`
+loc=`pwd`
+
+# Aborts if another instance of the process is running
+if [ -f $run/$2_t ]; then exit; fi
+
+dest=$(head -1 $run/$1 | awk '{print $1}')
+flst=$(head -1 $run/$1 | awk '{print $2}')
+njob=`expr $(grep -c '' $run/$1) - 1`
+if [ "$njob" -eq "-1" ]; then exit; fi
+
+tail -$njob $run/$1 > $run/$1_t
+tail -2000 $run/$2 > $run/$2_t
+echo '' >> $run/$2_t
+echo '\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /' >> $run/$2_t
+echo ' \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / ' >> $run/$2_t
+echo '  V    V    V    V    V    V    V    V    V    V  ' >> $run/$2_t
+echo '' >> $run/$2_t
+echo `date "+%Y-%m-%dT%H:%M"` $dest '<-' $flst >> $run/$2_t
+echo '--------------------------------------------------' >> $run/$2_t
+
+cd $dest
+ls -1 | grep -v -f - $flst | wget -U "" -nd -i - 2> $2_t
+cd $loc
+grep -v 'Not Found' $dest/$2_t >> $run/$2_t 
+echo '' >> $run/$2_t
+echo ' /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /' >> $run/$2_t
+echo '/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V ' >> $run/$2_t
+echo '--------------------------------------------------' >> $run/$2_t
+echo '' >> $run/$2_t
+
+mv -f  $run/$1_t $run/$1
+mv -f  $run/$2_t $run/$2
+

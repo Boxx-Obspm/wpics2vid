@@ -1,0 +1,51 @@
+#!/bin/bash
+# Author: B.Segret, v1.4, 27/10/2014
+#                   v1.3, 26/09/2014
+# Produce a list of pics to be downloaded from the Web
+# -> pics are those available for the last 7 days
+# -> pics outside of this range are deleted
+# SYNOPSIS
+#      ./get_mtsat2 src wdr
+# DESCRIPTION
+#      get_mtsat2 produces $wdr/listeURL, the wanted list of pics to be downloaded, and transfers $src directory to the wget bot
+#      wdr may be expressed relatively to src
+#      rootpath: URL where to download from (the naming rule is assumed)
+#      get_mtsat2 is aborted if the file $wdr/listeURL_t exists (logic locker)
+#      After the list is produced, the wgetbot is launched in background (aborted if already running)
+
+rootpath="http://www.cwb.gov.tw/V7/observe/satellite/Data/HSUP/"
+wgettodo=/home/boris/Bureau/myTinyBots/wgets/wget_todo
+
+src=$1; # source of pictures
+wdr=$2; # directory where to right listeURL
+
+cd $src
+if [ -f $wdr/listeURL_t ]; then exit; fi
+
+if [ -f $wdr/listeURL ]; then
+  cat $wdr/listeURL > $wdr/listeURL_t
+else
+  echo 'new' > $wdr/listeURL_t
+fi
+
+for rday in -5 -4 -3 -2 -1 +0 +1
+do
+#  tday=$(date -d '-'$rday' day' "+%Y-%m-%d")
+  tday=$(date -d $rday' day' "+%Y-%m-%d")
+  for hh in 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+  do
+    echo $rootpath"HSUP-"$tday"-"$hh"-00.jpg" >> $wdr/listeURL_t
+    echo $rootpath"HSUP-"$tday"-"$hh"-30.jpg" >> $wdr/listeURL_t
+  done
+done
+
+sort $wdr/listeURL_t | uniq | tail -336 > $wdr/listeURL
+# cleaning the $src directory for too old pics
+awk -F "/" '{print $NF;}' $wdr/listeURL > $wdr/listepics
+rm -f $(ls -1 *.jpg | grep -vf $wdr/listepics)
+
+rm -f $wdr/listepics
+rm -f $wdr/listeURL_t
+#configuring the run of wgetbot
+echo $src $wdr/listeURL >> $wgettodo
+

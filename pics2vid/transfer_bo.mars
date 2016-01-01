@@ -1,0 +1,21 @@
+#!/bin/bash
+# Author: B.Segret, v1.3, 07/10/2014
+# Transfer the video to BO.MARS persodomain
+# SYNOPSIS
+#      ./transfer video
+# DESCRIPTION
+#      bla
+
+loc=`pwd`
+run=`dirname $0`
+
+lftp ftpperso.free.fr <<EOTASKS
+user bo.mars xxxxxx
+lcd $run
+cd birdy
+mput TW.*
+exit
+EOTASKS
+
+echo `date "+%Y-%m-%d %H:%M"` '(TW.flv:'`ls -l --time-style="+%Y-%m-%dT%H:%M" $run/TW.flv | awk '{print $6}'`')' >> $0_log
+

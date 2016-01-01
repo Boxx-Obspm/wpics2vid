@@ -1,0 +1,15 @@
+#!/bin/bash
+# Author: B.Segret, v1.1, 29/09/2014
+# Transfer the video to LESIA03
+# SYNOPSIS
+#      ./transfer video
+# DESCRIPTION
+#      bla
+
+loc=`pwd`
+run=`dirname $0`
+
+scp -i ~/.ssh/id_rsa $run/TW.flv bsegret@styx.obspm.fr:temp
+ssh -i ~/.ssh/id_rsa bsegret@styx.obspm.fr scp temp lesia04:/volumes/esep/ceres/birdy/TW.flv
+ssh -i ~/.ssh/id_rsa bsegret@styx.obspm.fr rm -f temp
+
