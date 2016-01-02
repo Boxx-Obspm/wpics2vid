@@ -1,5 +1,6 @@
 #!/bin/bash
-# Author: B.Segret, v2.1, 27/10/2014
+# Author: B.Segret, v2.2, 02/01/2016
+#                   v2.1, 27/10/2014
 #                   v2.0, 22/09/2014
 # Downloads one list of files from the Internet
 # SYNOPSIS
@@ -10,6 +11,19 @@
 #         ex.: /destination ../filelist (files must exist, **NO SPACE IN NAMES**)
 #      -> wgetbot is executed for <wget_todo>'s 1st line only, then the line is removed
 #      -> <wget_log> (same dir like wgetbot) keeps the last N execution of wgetbot (N=20)
+
+# nouvelle version en cours de creation:
+# --------------------------------------
+# difficile de se rappeler la mise en oeuvre => ameliorer
+# - "todo" contient une liste de jobs, un appel de wgetbot execute le premier job de la liste
+# - un job = 2 mots, 1er = destination, 2ème = nom de la liste d'URLs (en local par rapport à destination)
+# pour accumuler des images de webcams dont le nom ne change pas:
+# - la liste URL contient l'adresse de l'image de la webcam
+# - sauver l'image sous 2 noms: "<img>_nnn.typ" et "<img>_last.typ" avec nnn = sec. depuis 1/1/1970 (date +%s)
+# - à chaque telechargement faire "diff" entre _last et l'image => si pas de retour alors identiques
+# - (tenter de garder la date du fichier telecharge, voire de ne telecharger que si different de local)
+# - si different alors ajouter _nnn et remplacer _last
+
 
 run=`dirname $0`
 loc=`pwd`
