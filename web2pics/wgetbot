@@ -24,12 +24,21 @@
 # - (tenter de garder la date du fichier telecharge, voire de ne telecharger que si different de local)
 # - si different alors ajouter _nnn et remplacer _last
 
+# --- ok ---
+# - ne telecharge que si nouvelle image
+# - verifie que nv image est effectivement differente (comparaison du contenu)
+
+
 
 run=`dirname $0`
 loc=`pwd`
 
 # Aborts if another instance of the process is running
 if [ -f $run/$2_t ]; then exit; fi
+
+dest=/home/birdy/myDevs/data
+echo $dest $dest/../adr >> $run/$1
+
 
 dest=$(head -1 $run/$1 | awk '{print $1}')
 flst=$(head -1 $run/$1 | awk '{print $2}')
@@ -47,7 +56,27 @@ echo `date "+%Y-%m-%dT%H:%M"` $dest '<-' $flst >> $run/$2_t
 echo '--------------------------------------------------' >> $run/$2_t
 
 cd $dest
-ls -1 | grep -v -f - $flst | wget -U "" -nd -i - 2> $2_t
+#ls -1 | grep -v -f - $flst | wget -U "" -nd -N -i - 2> $2_t
+wget -U "" -nd -N -i $flst 2> $2_t
+#llist=$(awk -F '/' '{print $NF}' $flst)
+for ff in $(awk -F '/' '{print $NF}' $flst)
+do
+  nff=$(echo $ff | awk -F '.' '{print $(NF-1)}')
+  sff=$(echo $ff | awk -F '.' '{print $NF}')
+  if [ -f ${nff}_last.${sff} ]; then
+    isdiff=$(diff ${nff}_last.${sff} ${ff})
+    if [ "$isdiff" != "" ]; then
+      # nouvelle image telechargee
+      cp ${ff} ${nff}_last.${sff}
+      ts=$(ls -l --time-style=+%s $ff | awk '{print $6}')
+      cp ${ff} ${nff}_${ts}.${sff}
+    fi
+  else
+    cp ${ff} ${nff}_last.${sff}
+    ts=$(ls -l --time-style=+%s $ff | awk '{print $6}')
+    cp ${ff} ${nff}_${ts}.${sff}
+  fi
+done
 cd $loc
 grep -v 'Not Found' $dest/$2_t >> $run/$2_t 
 echo '' >> $run/$2_t
