@@ -1,0 +1,79 @@
+#!/bin/bash
+# Author: B.Segret, v1.8, 27/10/2014
+#                   v1.7,  6/10/2014
+# Downloads one list of files from the Internet
+# SYNOPSIS
+#      ./prodVideo <src> <otp>
+# DESCRIPTION
+#      -> produces a .flv video movie into <otp> from the pictures in <src>.
+#         <otp> is also the working directory (picsTime will be written).
+#         Directory $src/temp/ must exit (to receive the video frames).
+#         Prefix for the movie title is preset ("TW").
+#         Dates and times of the pictures are given by the naming rules of the files.
+#         Use of OCTAVE routine pics2dirofpics.m
+#         Use of MEncoder with lavc options
+#         Use of x264 to get compatibility with Flash players
+
+# 0. get the pictures
+# 1. prepare inputs
+# 2. produce frames (octave, with forge-statistics)
+# 3. encode video (mencoder)
+# 4. clean the workspace
+loc=`pwd`
+run=`dirname $0`
+
+src=$1; # source of pictures
+otp=$2; # output directory (and temp files), maybe relative path from $src, anticipate free space
+movieprefix="TW"; # prefix of the movie without termination (.avi)
+wdr=$2; # working directory
+
+cd $run
+if [ -f prodVid_t ]; then exit; fi
+echo 'in process' > prodVid_t
+# 0. get the pictures
+# produce an updated list of URLs to setup the next download by wgetbot
+./get_mtsat2 $src $otp
+
+# 1. prepare inputs
+# all pictures will be listed with an absolute date, according to their naming rules
+ls -1 $src/*.jpg | 
+  awk -F "/" '{print $NF;}' |
+  awk -F "-" '{
+    mycmd="date -d \x27"$2"-"$3"-"$4" "$5":"substr($6,1,2)"\x27 \x22+%s\x22";
+    mycmd | getline dd;
+    print dd, length($0), $0;
+	}' | 
+  sort -n > $src/picsTime
+
+moviename=$movieprefix"_"$(head -1 $src/picsTime | awk -F "-" '{print $2"_"$3$4;}')
+moviename=$moviename$(tail -1 $src/picsTime | awk -F "-" '{print "-"$3$4;}')
+#echo $moviename; rm -f prodVid_t; exit;
+
+#rm -f prodVid_t; exit;
+
+# 2. produce frames (octave)
+# interpolate consecutive pictures as necessary to create the frames of the video, output into $otp/temp
+echo $src/picsTime > inOctave
+echo $src >> inOctave
+echo $moviename >> inOctave
+
+#mkdir $src/temp
+rm -f $src/temp/*
+#rmdir $src/temp
+#cd $wdr
+octave ./pics2dirofpics.m
+
+cd $src
+# 3. encode video (mencoder)
+mencoder mf://temp/*.jpg -mf fps=25:type=jpg -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -oac copy -o $otp/${moviename}.flv
+x264 --crf 24 -o $otp/$movieprefix.flv $otp/${moviename}.flv
+#cp $otp/${moviename}.flv $otp/$movieprefix.flv
+cp $(tail -1 picsTime | awk '{print $NF;}') $otp/$movieprefix.jpg
+#NOK# mencoder mf://temp/*.jpg -mf fps=25:type=jpg -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -oac copy -o $otp/${moviename}.mp4
+#mencoder mf://temp/*.jpg -mf fps=25:type=jpg -ovc lavc -lavcopts vcodec=flv:mbd=2:trell -oac copy -o $otp/${moviename}.flv
+
+# 4. clean the workspace
+#rm -f $src/temp/*
+#rmdir $src/temp
+cd $loc; cd $run; rm -f prodVid_t
+
