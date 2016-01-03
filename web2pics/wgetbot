@@ -36,8 +36,9 @@ loc=`pwd`
 # Aborts if another instance of the process is running
 if [ -f $run/$2_t ]; then exit; fi
 
-dest=/home/birdy/myDevs/data
-echo $dest $dest/../adr >> $run/$1
+#dest=/home/birdy/myDevs/wpics2vid_data
+dest=~/myTinyBots/wpics2vid_data
+echo $dest adresses >> $run/$1
 
 
 dest=$(head -1 $run/$1 | awk '{print $1}')
@@ -56,8 +57,8 @@ echo `date "+%Y-%m-%dT%H:%M"` $dest '<-' $flst >> $run/$2_t
 echo '--------------------------------------------------' >> $run/$2_t
 
 cd $dest
-#ls -1 | grep -v -f - $flst | wget -U "" -nd -N -i - 2> $2_t
-wget -U "" -nd -N -i $flst 2> $2_t
+#ls -1 | grep -v -f - $flst | wget -U "" -nd -N --tries=3 -c -i - 2> $2_t
+wget -U "" -nd -N -c -T 30 -w 5 -i $flst 2> $2_t
 #llist=$(awk -F '/' '{print $NF}' $flst)
 for ff in $(awk -F '/' '{print $NF}' $flst)
 do
