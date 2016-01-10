@@ -58,7 +58,7 @@ echo '--------------------------------------------------' >> $run/$2_t
 
 cd $dest
 #ls -1 | grep -v -f - $flst | wget -U "" -nd -N --tries=3 -c -i - 2> $2_t
-wget -U "" -nd -N -c -T 30 -w 5 -i $flst 2> $2_t
+wget -U "" -nd -N -T 30 -w 5 -i $flst 2> $2_t
 #llist=$(awk -F '/' '{print $NF}' $flst)
 for ff in $(awk -F '/' '{print $NF}' $flst)
 do
