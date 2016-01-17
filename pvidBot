@@ -1,0 +1,38 @@
+#!/bin/bash
+# Author: B.Segret, v1.9, 17/01/2016
+#                   v1.8, 27/10/2014
+#                   v1.7,  6/10/2014
+# Calls ./prodVideo (same directory)
+# SYNOPSIS
+#      ./pvidBot <kword>
+
+ii=$1
+run=$(dirname $0)
+
+lcl=myTinyBots/wpics2vid
+pfx=/home/bsegret/${lcl}_data/$ii
+nbp=$(grep $ii'$' ~/$lcl/local_vids | awk '{print $1;}')
+# tmn: taille mini: amelioration future pour eliminer les images partielles
+tmn=$(grep $ii'$' ~/$lcl/local_vids | awk '{print $2;}')
+otp=/home/bsegret/${lcl}/$ii
+
+# echo $lcl
+# echo $pfx
+# echo $nbp
+# echo $tmn
+# echo $otp
+
+nbr=$(ls -1 ${pfx}_[a-zA-Z01-9]*.jpg | grep -c '')
+echo $nbr
+nbr=`expr $nbr - $nbp`
+nbr=`expr $nbr - $nbp`
+echo $nbr
+
+if [ "$nbr" -ge 1 ]; then
+  rm -f $(ls -1 ${pfx}_[a-zA-Z01-9]*.jpg | sort | head -${nbr})
+  echo Suppression $nbr fichiers $ii dans $pfx
+fi
+
+# il faut nettoyer les fichiers corrompus!
+$run/prodVideo $pfx $nbp $otp
+

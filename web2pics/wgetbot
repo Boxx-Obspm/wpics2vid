@@ -4,7 +4,7 @@
 #                   v2.0, 22/09/2014
 # Downloads one list of files from the Internet
 # SYNOPSIS
-#      ./wgetbot <wget_todo(local)> <wget_log(local)>
+#      ./wgetbot <keyword> <wget_log(local)>
 # DESCRIPTION
 #      -> filelist and destination are given in <wget_todo> (same dir like wgetbot),
 #         one line per wanted execution (FIFO preferred)
@@ -29,24 +29,31 @@
 # - verifie que nv image est effectivement differente (comparaison du contenu)
 
 
-
 run=`dirname $0`
 loc=`pwd`
-
-# Aborts if another instance of the process is running
-if [ -f $run/$2_t ]; then exit; fi
-
 #dest=/home/birdy/myDevs/wpics2vid_data
 dest=~/myTinyBots/wpics2vid_data
-echo $dest adresses >> $run/$1
+
+# Aborts if another instance of the process is running, wait, up to twice, otherwise exit
+if [ -f $run/$2_t ]; then
+  sleep 30
+  if [ -f $run/$2_t ]; then
+    sleep 30
+    if [ -f $run/$2_t ]; then exit; fi
+  fi
+fi
+
+grep '^'$1' ' ~/myTinyBots/wpics2vid/adresses |
+  awk '{print $2;}' > ~/myTinyBots/wpics2vid/adr_t
+echo $dest ~/myTinyBots/wpics2vid/adr_t > $run/wget_todo
 
 
-dest=$(head -1 $run/$1 | awk '{print $1}')
-flst=$(head -1 $run/$1 | awk '{print $2}')
-njob=`expr $(grep -c '' $run/$1) - 1`
+dest=$(head -1 $run/wget_todo | awk '{print $1}')
+flst=$(head -1 $run/wget_todo | awk '{print $2}')
+njob=`expr $(grep -c '' $run/wget_todo) - 1`
 if [ "$njob" -eq "-1" ]; then exit; fi
 
-tail -$njob $run/$1 > $run/$1_t
+tail -$njob $run/wget_todo > $run/wget_todo_t
 tail -2000 $run/$2 > $run/$2_t
 echo '' >> $run/$2_t
 echo '\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /' >> $run/$2_t
@@ -86,6 +93,6 @@ echo '/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V ' >> $run/$2_t
 echo '--------------------------------------------------' >> $run/$2_t
 echo '' >> $run/$2_t
 
-mv -f  $run/$1_t $run/$1
+mv -f  $run/wget_todo_t $run/wget_todo
 mv -f  $run/$2_t $run/$2
 
