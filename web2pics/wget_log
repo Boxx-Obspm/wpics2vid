@@ -1,291 +1,3 @@
-Le fichier distant est plus récent, récupération.
-
---2016-01-17 22:38:08--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-Réutilisation de la connexion existante vers go.itelescope.net:443.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50953 (50K) [image/jpeg]
-Sauvegarde en : «AllSky-Spain.jpg»
-
-     0K .......... .......... .......... .......... ......... 100%  313K=0,2s
-
-2016-01-17 22:38:08 (313 KB/s) - «AllSky-Spain.jpg» sauvegardé [50953/50953]
-
-FINISHED --2016-01-17 22:38:08--
-Total wall clock time: 6,6s
-Downloaded: 1 files, 50K in 0,2s (313 KB/s)
-
- /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
-/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
---------------------------------------------------
-
-
-\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
- \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
-  V    V    V    V    V    V    V    V    V    V  
-
-2016-01-17T22:40 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
---------------------------------------------------
---2016-01-17 22:40:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
-Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
-Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50953 (50K) [image/jpeg]
-Le fichier distant est plus récent, récupération.
-
---2016-01-17 22:40:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-Réutilisation de la connexion existante vers go.itelescope.net:443.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50953 (50K) [image/jpeg]
-Sauvegarde en : «AllSky-Spain.jpg»
-
-     0K .......... .......... .......... .......... ......... 100%  314K=0,2s
-
-2016-01-17 22:40:08 (314 KB/s) - «AllSky-Spain.jpg» sauvegardé [50953/50953]
-
-FINISHED --2016-01-17 22:40:08--
-Total wall clock time: 6,5s
-Downloaded: 1 files, 50K in 0,2s (314 KB/s)
-
- /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
-/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
---------------------------------------------------
-
-
-\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
- \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
-  V    V    V    V    V    V    V    V    V    V  
-
-2016-01-17T22:42 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
---------------------------------------------------
---2016-01-17 22:42:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
-Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
-Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50690 (50K) [image/jpeg]
-Le fichier distant est plus récent, récupération.
-
---2016-01-17 22:42:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-Réutilisation de la connexion existante vers go.itelescope.net:443.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50690 (50K) [image/jpeg]
-Sauvegarde en : «AllSky-Spain.jpg»
-
-     0K .......... .......... .......... .......... ......... 100%  311K=0,2s
-
-2016-01-17 22:42:07 (311 KB/s) - «AllSky-Spain.jpg» sauvegardé [50690/50690]
-
-FINISHED --2016-01-17 22:42:07--
-Total wall clock time: 6,6s
-Downloaded: 1 files, 50K in 0,2s (311 KB/s)
-
- /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
-/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
---------------------------------------------------
-
-
-\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
- \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
-  V    V    V    V    V    V    V    V    V    V  
-
-2016-01-17T22:44 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
---------------------------------------------------
---2016-01-17 22:44:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
-Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
-Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50690 (50K) [image/jpeg]
-Le fichier distant est plus récent, récupération.
-
---2016-01-17 22:44:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-Réutilisation de la connexion existante vers go.itelescope.net:443.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50690 (50K) [image/jpeg]
-Sauvegarde en : «AllSky-Spain.jpg»
-
-     0K .......... .......... .......... .......... ......... 100%  311K=0,2s
-
-2016-01-17 22:44:07 (311 KB/s) - «AllSky-Spain.jpg» sauvegardé [50690/50690]
-
-FINISHED --2016-01-17 22:44:07--
-Total wall clock time: 6,6s
-Downloaded: 1 files, 50K in 0,2s (311 KB/s)
-
- /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
-/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
---------------------------------------------------
-
-
-\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
- \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
-  V    V    V    V    V    V    V    V    V    V  
-
-2016-01-17T22:46 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
---------------------------------------------------
---2016-01-17 22:46:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
-Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
-Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50473 (49K) [image/jpeg]
-Le fichier distant est plus récent, récupération.
-
---2016-01-17 22:46:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-Réutilisation de la connexion existante vers go.itelescope.net:443.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50473 (49K) [image/jpeg]
-Sauvegarde en : «AllSky-Spain.jpg»
-
-     0K .......... .......... .......... .......... ......... 100%  312K=0,2s
-
-2016-01-17 22:46:07 (312 KB/s) - «AllSky-Spain.jpg» sauvegardé [50473/50473]
-
-FINISHED --2016-01-17 22:46:07--
-Total wall clock time: 6,6s
-Downloaded: 1 files, 49K in 0,2s (312 KB/s)
-
- /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
-/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
---------------------------------------------------
-
-
-\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
- \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
-  V    V    V    V    V    V    V    V    V    V  
-
-2016-01-17T22:48 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
---------------------------------------------------
---2016-01-17 22:48:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
-Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
-Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50473 (49K) [image/jpeg]
-Le fichier distant est plus récent, récupération.
-
---2016-01-17 22:48:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-Réutilisation de la connexion existante vers go.itelescope.net:443.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50473 (49K) [image/jpeg]
-Sauvegarde en : «AllSky-Spain.jpg»
-
-     0K .......... .......... .......... .......... ......... 100%  306K=0,2s
-
-2016-01-17 22:48:08 (306 KB/s) - «AllSky-Spain.jpg» sauvegardé [50473/50473]
-
-FINISHED --2016-01-17 22:48:08--
-Total wall clock time: 6,7s
-Downloaded: 1 files, 49K in 0,2s (306 KB/s)
-
- /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
-/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
---------------------------------------------------
-
-
-\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
- \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
-  V    V    V    V    V    V    V    V    V    V  
-
-2016-01-17T22:50 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
---------------------------------------------------
---2016-01-17 22:50:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
-Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
-Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50473 (49K) [image/jpeg]
-Le fichier distant est plus récent, récupération.
-
---2016-01-17 22:50:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-Réutilisation de la connexion existante vers go.itelescope.net:443.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 50473 (49K) [image/jpeg]
-Sauvegarde en : «AllSky-Spain.jpg»
-
-     0K .......... .......... .......... .......... ......... 100%  307K=0,2s
-
-2016-01-17 22:50:08 (307 KB/s) - «AllSky-Spain.jpg» sauvegardé [50473/50473]
-
-FINISHED --2016-01-17 22:50:08--
-Total wall clock time: 6,6s
-Downloaded: 1 files, 49K in 0,2s (307 KB/s)
-
- /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
-/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
---------------------------------------------------
-
-
-\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
- \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
-  V    V    V    V    V    V    V    V    V    V  
-
-2016-01-17T22:52 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
---------------------------------------------------
---2016-01-17 22:52:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
-Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
-Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 49301 (48K) [image/jpeg]
-Le fichier distant est plus récent, récupération.
-
---2016-01-17 22:52:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-Réutilisation de la connexion existante vers go.itelescope.net:443.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 49301 (48K) [image/jpeg]
-Sauvegarde en : «AllSky-Spain.jpg»
-
-     0K .......... .......... .......... .......... ........  100%  303K=0,2s
-
-2016-01-17 22:52:07 (303 KB/s) - «AllSky-Spain.jpg» sauvegardé [49301/49301]
-
-FINISHED --2016-01-17 22:52:07--
-Total wall clock time: 6,6s
-Downloaded: 1 files, 48K in 0,2s (303 KB/s)
-
- /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
-/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
---------------------------------------------------
-
-
-\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
- \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
-  V    V    V    V    V    V    V    V    V    V  
-
-2016-01-17T22:54 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
---------------------------------------------------
---2016-01-17 22:54:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
-Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
-Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 49301 (48K) [image/jpeg]
-Le fichier distant est plus récent, récupération.
-
---2016-01-17 22:54:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
-Réutilisation de la connexion existante vers go.itelescope.net:443.
-requête HTTP transmise, en attente de la réponse...200 OK
-Longueur: 49301 (48K) [image/jpeg]
-Sauvegarde en : «AllSky-Spain.jpg»
-
-     0K .......... .......... .......... .......... ........  100%  301K=0,2s
-
-2016-01-17 22:54:07 (301 KB/s) - «AllSky-Spain.jpg» sauvegardé [49301/49301]
-
-FINISHED --2016-01-17 22:54:07--
-Total wall clock time: 6,7s
-Downloaded: 1 files, 48K in 0,2s (301 KB/s)
-
- /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
-/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
---------------------------------------------------
-
-
-\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
- \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
-  V    V    V    V    V    V    V    V    V    V  
 
 2016-01-17T22:56 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
 --------------------------------------------------
@@ -2026,6 +1738,294 @@ Sauvegarde en : «AllSky-Spain.jpg»
 FINISHED --2016-01-18 00:40:07--
 Total wall clock time: 6,6s
 Downloaded: 1 files, 44K in 0,2s (279 KB/s)
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T00:42 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T00:44 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T00:46 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T00:48 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T00:50 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T00:52 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T00:54 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T00:56 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T00:58 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T01:00 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T01:02 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T01:04 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+Aucune URL repérée dans /obs/bsegret/myTinyBots/wpics2vid/adr_t.
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T01:06 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+--2016-01-18 01:06:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
+p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
+Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
+Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
+requête HTTP transmise, en attente de la réponse...200 OK
+Longueur: 45434 (44K) [image/jpeg]
+Le fichier distant est plus récent, récupération.
+
+--2016-01-18 01:06:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
+Réutilisation de la connexion existante vers go.itelescope.net:443.
+requête HTTP transmise, en attente de la réponse...200 OK
+Longueur: 45434 (44K) [image/jpeg]
+Sauvegarde en : «AllSky-Spain.jpg»
+
+     0K .......... .......... .......... .......... ....      100%  277K=0,2s
+
+2016-01-18 01:06:08 (277 KB/s) - «AllSky-Spain.jpg» sauvegardé [45434/45434]
+
+FINISHED --2016-01-18 01:06:08--
+Total wall clock time: 6,7s
+Downloaded: 1 files, 44K in 0,2s (277 KB/s)
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T01:08 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+--2016-01-18 01:08:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
+p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
+Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
+Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
+requête HTTP transmise, en attente de la réponse...200 OK
+Longueur: 45434 (44K) [image/jpeg]
+Le fichier distant est plus récent, récupération.
+
+--2016-01-18 01:08:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
+Réutilisation de la connexion existante vers go.itelescope.net:443.
+requête HTTP transmise, en attente de la réponse...200 OK
+Longueur: 45434 (44K) [image/jpeg]
+Sauvegarde en : «AllSky-Spain.jpg»
+
+     0K .......... .......... .......... .......... ....      100%  280K=0,2s
+
+2016-01-18 01:08:08 (280 KB/s) - «AllSky-Spain.jpg» sauvegardé [45434/45434]
+
+FINISHED --2016-01-18 01:08:08--
+Total wall clock time: 6,6s
+Downloaded: 1 files, 44K in 0,2s (280 KB/s)
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T01:10 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+--2016-01-18 01:10:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
+p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
+Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
+Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
+requête HTTP transmise, en attente de la réponse...200 OK
+Longueur: 45434 (44K) [image/jpeg]
+Le fichier distant est plus récent, récupération.
+
+--2016-01-18 01:10:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
+Réutilisation de la connexion existante vers go.itelescope.net:443.
+requête HTTP transmise, en attente de la réponse...200 OK
+Longueur: 45434 (44K) [image/jpeg]
+Sauvegarde en : «AllSky-Spain.jpg»
+
+     0K .......... .......... .......... .......... ....      100%  276K=0,2s
+
+2016-01-18 01:10:08 (276 KB/s) - «AllSky-Spain.jpg» sauvegardé [45434/45434]
+
+FINISHED --2016-01-18 01:10:08--
+Total wall clock time: 6,7s
+Downloaded: 1 files, 44K in 0,2s (276 KB/s)
+
+ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
+/  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
+--------------------------------------------------
+
+
+\   /\   /\   /\   /\   /\   /\   /\   /\   /\   /
+ \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ /  \ / 
+  V    V    V    V    V    V    V    V    V    V  
+
+2016-01-18T01:12 /obs/bsegret/myTinyBots/wpics2vid_data <- /obs/bsegret/myTinyBots/wpics2vid/adr_t
+--------------------------------------------------
+--2016-01-18 01:12:01--  https://go.itelescope.net/Images/AllSky-Spain.jpg
+p11-kit: invalid config filename, will be ignored in the future: /etc/pkcs11/modules/gnome-keyring-module
+Résolution de go.itelescope.net (go.itelescope.net)... 54.86.185.234
+Connexion vers go.itelescope.net (go.itelescope.net)|54.86.185.234|:443...connecté.
+requête HTTP transmise, en attente de la réponse...200 OK
+Longueur: 45212 (44K) [image/jpeg]
+Le fichier distant est plus récent, récupération.
+
+--2016-01-18 01:12:07--  https://go.itelescope.net/Images/AllSky-Spain.jpg
+Réutilisation de la connexion existante vers go.itelescope.net:443.
+requête HTTP transmise, en attente de la réponse...200 OK
+Longueur: 45212 (44K) [image/jpeg]
+Sauvegarde en : «AllSky-Spain.jpg»
+
+     0K .......... .......... .......... .......... ....      100%  276K=0,2s
+
+2016-01-18 01:12:08 (276 KB/s) - «AllSky-Spain.jpg» sauvegardé [45212/45212]
+
+FINISHED --2016-01-18 01:12:08--
+Total wall clock time: 6,6s
+Downloaded: 1 files, 44K in 0,2s (276 KB/s)
 
  /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
 /  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V 
